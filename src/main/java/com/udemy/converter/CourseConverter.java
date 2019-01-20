@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 @Component("courseConverter")
 public class CourseConverter{
 
+    
     //transformar de una entity a un model
     public CourseModel entity2model(Course course){
         CourseModel courseModel = new CourseModel();
