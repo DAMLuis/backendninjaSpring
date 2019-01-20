@@ -25,7 +25,7 @@ public class CourseController {
 	@Qualifier("courseServiceImpl")
 	private CourseService courseService;
 	
-	/ddd
+	//prueba
 	  
 	@GetMapping("/listcourses")
 	public ModelAndView listAllCourses() {
