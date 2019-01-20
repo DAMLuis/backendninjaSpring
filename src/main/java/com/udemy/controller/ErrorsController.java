@@ -1,0 +1,17 @@
+package com.udemy.controller;
+
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+
+//control de errores
+@ControllerAdvice
+public class ErrorsController {
+	
+	public static final String ISE_VIEW="error/500";
+
+	@ExceptionHandler(Exception.class)
+	public String ShowInternalServerError() {
+		return ISE_VIEW;
+	}
+	
+}
